@@ -7,8 +7,8 @@ import { TitleComponent } from '@shared/title/title.component';
   standalone: true,
   imports: [CommonModule, TitleComponent, HeavyLoadersFastComponent],
   templateUrl: './defer-options.component.html',
-  styles: ``
+  styles: ``,
 })
 export default class DeferOptionsComponent {
-
+  constructor() {}
 }

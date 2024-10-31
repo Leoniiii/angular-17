@@ -12,6 +12,6 @@ import { SidemenuComponent } from '@shared/sidemenu/sidemenu.component';
   templateUrl: './dashboard.component.html',
   styles: ``
 })
-export default class DashboardComponent {
+export class DashboardComponent {
 
 }

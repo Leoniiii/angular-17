@@ -1,0 +1,10 @@
+{
+    "/reqres-api": {
+      "target": "https://reqres.in",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite": {"^/reqres-api": ""}
+    }
+  }
+  

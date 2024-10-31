@@ -9,6 +9,5 @@ import { Component, Input, booleanAttribute, input } from '@angular/core';
 })
 export class TitleComponent {
   @Input({required: true}) title!: string;
-  @Input({transform: booleanAttribute}) withShadow!:boolean;
 
 }

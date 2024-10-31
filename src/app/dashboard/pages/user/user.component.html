@@ -1,1 +1,14 @@
-<app-title title="User"></app-title>
+<app-title title="User" />
+
+@if(user()) {
+  <section>
+    <img [srcset]="user()!.avatar" [alt]="user()!.first_name" />
+
+    <div>
+      <h3>{{titleLabel()}}</h3>
+      <p>{{user()!.email}}</p>
+    </div>
+  </section>
+}@else {
+  <p>Cargando Info</p>
+}

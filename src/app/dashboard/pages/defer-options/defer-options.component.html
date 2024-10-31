@@ -1,4 +1,4 @@
-<app-title [title]="'Defer options'" />
+<app-title [title]="'Defer Triggers'" />
 
 <section>
     <h1 class="text-xl">Interacciones</h1>
@@ -9,7 +9,7 @@
             <span>On Iteraction</span>
         </app-heavy-loaders-fast>
     } @placeholder {
-        <div class="w-full h-20 bg-purple-100">Click en el div</div>
+        <div class="w-full h-20 bg-purple-100">Interactúa con el div</div>
     }
 </section>
 
@@ -22,10 +22,10 @@
 
     @defer (on interaction(btnInteraction)) {
         <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
-            <span>On Iteraction</span>
+            <span>On Iteraction click en el botón</span>
         </app-heavy-loaders-fast>
     } @placeholder {
-        <div class="w-full h-20 bg-purple-100">Click en el div</div>
+        <div class="w-full h-20 bg-purple-100">Click en el botón</div>
     }
 </section>
 
@@ -36,7 +36,7 @@
 
     @defer (on hover(btnInteraction)) {
         <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
-            <span>On Iteraction</span>
+            <span>On Iteraction hover en el botón</span>
         </app-heavy-loaders-fast>
     } @placeholder {
         <div class="w-full h-20 bg-purple-100">Click en el div</div>
@@ -50,7 +50,7 @@
 
     @defer (on immediate) {
         <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
-            <span>On Iteraction</span>
+            <span>On Iteraction inmediatamente</span>
         </app-heavy-loaders-fast>
     } @placeholder {
         <div class="w-full h-20 bg-purple-100">Click en el div</div>
@@ -66,7 +66,7 @@
 
     @defer (on timer(2000)) {
         <app-heavy-loaders-fast cssClass="bg-blue-500 h-20">
-            <span>On Iteraction</span>
+            <span>On Iteraction después de dos seg</span>
         </app-heavy-loaders-fast>
     } @placeholder {
         <div class="w-full h-20 bg-purple-100">dos segundos</div>

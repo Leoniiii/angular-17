@@ -3,7 +3,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-       "@shared/*": ["./src/app/shared/*"], 
+       "@shared/*": ["./src/app/shared/*"],
+       "@interfaces/*": ["./src/app/interfaces/*"], 
        "@services/*": ["./src/app/services/*"], 
       },
     "outDir": "./dist/out-tsc",
@@ -16,7 +17,6 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,

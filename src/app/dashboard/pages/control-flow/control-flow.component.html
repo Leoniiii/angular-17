@@ -1,24 +1,32 @@
-<app-title [title]="title" withShadow/>
+<app-title [title]="title" />
 
 <section class="grid grid-cols-1 md:grid-cols-2 gap-3">
   <div class="bg-white rounded-shadow p-10">
     <h2 class="text-2xl font-bold mb-5">if: {{ showContent() }}</h2>
 
-    <button (click)="toggleContent()">Click me!</button>
+    <button
+      class="p-2 bg-blue-500 rounded text-white"
+      (click)="toggleContent()"
+    >
+      Click me!
+    </button>
 
     @if(showContent()) {
     <p>Hola Mundo</p>
     } @else {
-    <p>******S</p>
+    <p>******</p>
     }
   </div>
   <div class="bg-white rounded-shadow p-10">
-    @switch (grade()) { @case ('A') {
-    <p>Arriba de 90</p>
+    <h2 class="text-3xl">{{grade()}}</h2>
+
+    @switch (grade()) { 
+      @case ('A') {
+      <p>Arriba de 90</p>
     } @case ('B') {
-    <p>Arriba de 80</p>
+      <p>Arriba de 80</p>
     } @default {
-    <p>Reprobado</p>
+      <p>Reprobado</p>
     } }
   </div>
 
@@ -28,12 +36,12 @@
       $first, last = $last, even = $even, odd = $odd, count = $count) {
       <li
         [class]="{
-        'bg-red-100': even && !first && !last,
-        'bg-purple-100': odd && !first && !last,
-        'bg-blue-100': first || last,
+        'bg-red-500': even && !first && !last,
+        'bg-purple-500': odd && !first && !last,
+        'bg-blue-500': first || last,
       }"
       >
-        {{ i + 1 }}/ {{count}} - {{ framework }}
+        {{ i + 1 }}/ {{ count }} - {{ framework }}
       </li>
       }
     </ul>

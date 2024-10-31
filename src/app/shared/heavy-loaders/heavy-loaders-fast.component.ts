@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   imports: [CommonModule],
   template: `
   <section [ngClass]="['w-full', cssClass]">
-  <ng-content></ng-content>  
+  <ng-content />  
   </section>
 `,
   styles: ``
